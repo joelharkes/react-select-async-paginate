@@ -269,6 +269,7 @@ class AsyncPaginate extends Component {
 
     return (
       <SelectComponent
+        filterOption={alwaysTrue}
         {...props}
         inputValue={search}
         menuIsOpen={menuIsOpen}
@@ -280,7 +281,6 @@ class AsyncPaginate extends Component {
         isLoading={currentOptions.isLoading}
         isFirstLoad={currentOptions.isFirstLoad}
         options={currentOptions.options}
-        filterOption={alwaysTrue}
         components={{
           MenuList,
           ...components,
